@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AchivementBar" customModule="CustomProgressBar" customModuleProvider="target">
+            <connections>
+                <outlet property="achivementBar" destination="L5d-Ai-fU8" id="M2O-Xc-XzE"/>
+                <outlet property="achivementLabel" destination="neb-s3-QtW" id="MuJ-ba-5ar"/>
+                <outlet property="achivementWidth" destination="nbb-N7-Itn" id="Xbf-v5-cTN"/>
+                <outlet property="backgroundBar" destination="30F-36-i2R" id="pbx-mG-wyz"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="489" height="51"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="30F-36-i2R" userLabel="Background">
+                    <rect key="frame" x="0.0" y="0.0" width="489" height="51"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L5d-Ai-fU8" userLabel="Progress">
+                            <rect key="frame" x="0.0" y="0.0" width="30" height="51"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="neb-s3-QtW">
+                                    <rect key="frame" x="5.5" y="19.5" width="14.5" height="12"/>
+                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                    <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                            <color key="backgroundColor" red="0.10588235410000001" green="0.270588249" blue="0.60392159219999997" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstItem="neb-s3-QtW" firstAttribute="centerY" secondItem="L5d-Ai-fU8" secondAttribute="centerY" id="3Ce-iF-TJw"/>
+                                <constraint firstAttribute="trailing" secondItem="neb-s3-QtW" secondAttribute="trailing" constant="10" id="gVB-je-dkG"/>
+                                <constraint firstAttribute="width" constant="30" id="nbb-N7-Itn"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" red="0.8627451062" green="0.8627451062" blue="0.86666667460000002" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstItem="L5d-Ai-fU8" firstAttribute="leading" secondItem="30F-36-i2R" secondAttribute="leading" id="4qC-UF-nAq"/>
+                        <constraint firstItem="L5d-Ai-fU8" firstAttribute="top" secondItem="30F-36-i2R" secondAttribute="top" id="iQ1-8y-PWD"/>
+                        <constraint firstAttribute="bottom" secondItem="L5d-Ai-fU8" secondAttribute="bottom" id="vhS-Dw-iSC"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="30F-36-i2R" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0Fa-Np-8Nk"/>
+                <constraint firstItem="30F-36-i2R" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KEF-zt-h4C"/>
+                <constraint firstAttribute="bottom" secondItem="30F-36-i2R" secondAttribute="bottom" id="UEu-VS-5ZB"/>
+                <constraint firstAttribute="trailing" secondItem="30F-36-i2R" secondAttribute="trailing" id="sA5-jJ-fyT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="64" y="-12"/>
+        </view>
+    </objects>
+</document>
